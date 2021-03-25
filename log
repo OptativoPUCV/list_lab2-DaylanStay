@@ -90,3 +90,9 @@ Thu Mar 25 20:52:51 UTC 2021:
  1 file changed, 1 insertion(+), 2 deletions(-)
  tests:  0|0
 475d400
+Thu Mar 25 20:54:52 UTC 2021: 
+ list.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+ tests:  5|4
+total_score: 25/70
+fe2ac6a
