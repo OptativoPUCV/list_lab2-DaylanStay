@@ -37,23 +37,31 @@ List * createList()
   return lista;
 }
 
-void * firstList(List * list) {
-    return NULL;
+void * firstList(List * list) 
+{
+  Node *n = createNode(list->current);
+  list->head = list->current;
+  return n;
 }
 
-void * nextList(List * list) {
-    return NULL;
+void * nextList(List * list) 
+{
+  return NULL;
 }
 
-void * lastList(List * list) {
-    return NULL;
+void * lastList(List * list) 
+{
+  return NULL;
 }
 
-void * prevList(List * list) {
-    return NULL;
+void * prevList(List * list) 
+{
+  return NULL;
 }
 
-void pushFront(List * list, const void * data) {
+void pushFront(List * list, const void * data) 
+{
+
 }
 
 void pushBack(List * list, const void * data) {
