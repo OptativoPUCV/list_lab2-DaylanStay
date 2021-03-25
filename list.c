@@ -28,8 +28,9 @@ Node * createNode(const void * data) {
     return new;
 }
 
-List * createList() {
-     return NULL;
+List * createList() 
+{
+  return NULL;
 }
 
 void * firstList(List * list) {
