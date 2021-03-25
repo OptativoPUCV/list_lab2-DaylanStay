@@ -61,10 +61,9 @@ void * lastList(List * list)
   if(list->current == NULL) return NULL;
   if(list->current->prev == NULL) return NULL;
 
-  list->tail = list->current->prev;
-  list->current->prev = list->tail;
 
-  return list->current->data;
+
+  return NULL;
 }
 
 void * prevList(List * list) 
