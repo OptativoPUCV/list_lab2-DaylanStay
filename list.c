@@ -39,16 +39,16 @@ List * createList()
 
 void * firstList(List * list) 
 {
-  Node *n = createNode(list->current);
+  if(list == NULL) return NULL;
+  if(list->head == NULL) return NULL;
+
   list->current = list->head;
-  return n;
+  return list->current->data;
 }
 
 void * nextList(List * list) 
 {
-  Node *n = createNode(list->current->next);
-  list->current = list->current->next;
-  return n;
+  return NULL;
 }
 
 void * lastList(List * list) 
