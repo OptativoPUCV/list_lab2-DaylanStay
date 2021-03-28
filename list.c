@@ -126,7 +126,7 @@ void * popCurrent(List * list)
     return NULL;
   }
 
-  void *data = (void*) list->current->data;
+  
 
   Node *current = list->current;
   Node *last = current->prev;
@@ -146,7 +146,7 @@ void * popCurrent(List * list)
     }
   }
   free(current);
-  return (void*) data;
+  return (void*) list->current->data;
 }
 
 void cleanList(List * list) {
