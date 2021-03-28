@@ -130,7 +130,7 @@ void * popCurrent(List * list)
   Node *last = current->prev;
   Node *next = current->next;
   void *data = (void*) current->data;
-list->head->next = (void*)list->current->data;
+
   if(list->current == list->head)
   {
     list->current = next;
@@ -145,6 +145,7 @@ list->head->next = (void*)list->current->data;
       next->prev = last;
     }
   }
+  list->head->next = (void*)list->current->data;
   free(current);
   return data;
 }
