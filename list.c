@@ -126,11 +126,13 @@ void * popCurrent(List * list)
     return NULL;
   }
 
-  void *data = (void*) list->current->data;
+  
 
   Node *current = list->current;
   Node *last = current->prev;
   Node *next = current->next;
+
+  void *data = (void*) current->data;
 
   if(list->current == list->head)
   {
