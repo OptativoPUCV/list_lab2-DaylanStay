@@ -144,7 +144,7 @@ void * popCurrent(List * list)
     }
   }
   free(current);
-  return (void*) list->current->data;
+  return (void*) current->data;
 }
 
 void cleanList(List * list) {
