@@ -141,7 +141,6 @@ void * popCurrent(List * list)
   }else
   {
     list->current = next;
-    list->head->next = (void*)list->current->data;
     if(next)
     {
       next->prev = last;
